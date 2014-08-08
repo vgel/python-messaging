@@ -548,7 +548,7 @@ class DataPart(object):
             return self._data
 
         elif self._filename is not None:
-            with open(self._filename, 'r') as f:
+            with open(self._filename, 'rb') as f:
                 self._data = f.read()
             return self._data
 
